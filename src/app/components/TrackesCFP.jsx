@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function TracksCFP() {
   const tracks = [
     {
@@ -147,6 +148,28 @@ export default function TracksCFP() {
           </p>
         </div>
       </div>
+      <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+  <Link
+    href="/submission-guidelines"
+    className="rounded-xl border border-slate-700 bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-400"
+  >
+    Submission Guidelines
+  </Link>
+
+  <Link
+    href="/author-guidelines"
+    className="rounded-xl border border-slate-700 bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:border-cyan-400 hover:text-cyan-400"
+  >
+    Author Guidelines
+  </Link>
+
+  <Link
+    href="/how-to-submit"
+    className="rounded-xl bg-cyan-400 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-300"
+  >
+    How to Submit →
+  </Link>
+</div>
     </section>
   );
 }
