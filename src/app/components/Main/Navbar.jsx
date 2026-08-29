@@ -7,15 +7,14 @@ import Image from "next/image";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "#about" },
-    { name: "Tracks / CFP", href: "#tracks" },
-    { name: "Keynote", href: "#keynotes" },
-    { name: "Registration", href: "#registration" },
-    { name: "Dates", href: "#dates" },
-    { name: "Contact", href: "#contact" },
-  ];
+ const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "#about" },
+  { name: "CFP / Tracks", href: "#tracks" },
+  { name: "Important Dates", href: "#dates" },
+  { name: "Committee", href: "/committee" },
+  { name: "Contact", href: "/contact" },
+];
 
   return (
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/90 text-white shadow-lg shadow-black/5 backdrop-blur-xl">
@@ -56,16 +55,92 @@ export default function Navbar() {
             ))}
           </div>
 
+            <div className="relative group">
+  <button
+    type="button"
+    className="inline-flex items-center gap-1 rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-800 hover:text-cyan-400"
+  >
+    Authors
+    <svg
+      className="h-4 w-4 transition-transform group-hover:rotate-180"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </button>
+
+  <div className="invisible absolute right-0 top-full mt-2 w-64 translate-y-2 rounded-xl border border-slate-700 bg-slate-900 p-2 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+    
+    <Link
+      href="/author-guidelines"
+      className="block rounded-lg px-4 py-3 text-sm text-slate-300 transition hover:bg-slate-800 hover:text-cyan-400"
+    >
+      <span className="font-semibold text-white">
+        Author Guidelines
+      </span>
+      <span className="mt-1 block text-xs text-slate-500">
+        General requirements for authors
+      </span>
+    </Link>
+
+    <Link
+      href="/submission-guidelines"
+      className="block rounded-lg px-4 py-3 text-sm text-slate-300 transition hover:bg-slate-800 hover:text-cyan-400"
+    >
+      <span className="font-semibold text-white">
+        Submission Guidelines
+      </span>
+      <span className="mt-1 block text-xs text-slate-500">
+        Manuscript preparation requirements
+      </span>
+    </Link>
+
+    <Link
+      href="/how-to-submit"
+      className="block rounded-lg px-4 py-3 text-sm text-slate-300 transition hover:bg-slate-800 hover:text-cyan-400"
+    >
+      <span className="font-semibold text-white">
+        How to Submit
+      </span>
+      <span className="mt-1 block text-xs text-slate-500">
+        Step-by-step CMT submission process
+      </span>
+    </Link>
+
+    <Link
+      href="/where-to-submit"
+      className="block rounded-lg px-4 py-3 text-sm text-slate-300 transition hover:bg-slate-800 hover:text-cyan-400"
+    >
+      <span className="font-semibold text-white">
+        Where to Submit
+      </span>
+      <span className="mt-1 block text-xs text-slate-500">
+        Official CMT submission link
+      </span>
+    </Link>
+
+  </div>
+</div>
+
           {/* Desktop CTA */}
           <div className="hidden lg:block">
             <Link
-              href="#registration"
+              href="/where-to-submit"
               className="inline-flex items-center gap-2 rounded-lg bg-cyan-400 px-4 py-2.5 text-sm font-bold text-slate-950 shadow-sm transition-all duration-200 hover:bg-cyan-300 hover:shadow-lg hover:shadow-cyan-400/20"
             >
               Register
               <span aria-hidden="true">→</span>
             </Link>
           </div>
+
+          
 
           {/* Mobile Menu Button */}
           <button
