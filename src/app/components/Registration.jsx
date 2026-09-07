@@ -1,3 +1,6 @@
+import BankDetailsTable from "./BankDetails";
+import PaymentForm from "./PaymentForm";
+
 export default function Registration() {
   const fees = [
     {
@@ -111,6 +114,19 @@ export default function Registration() {
             </div>
           </div>
 
+          {/* payment integration */}
+
+      <div className="bg-gray-200 max-h-max font-bold rounded-xl p-10"> 
+        <p className="  ml-10">For Payments Via Wire Transfer/Bank Transfer Using Bank Identifier CODE (BIC)/SWIFT CODE/Routing/NEFT/IFSC CODE:</p>
+        <BankDetailsTable />
+        <hr />
+        <PaymentForm />
+      </div>
+
+
+
+
+
           {/* Registration Guidelines */}
           <div className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-8">
             <div className="mb-7 flex items-center gap-4">
@@ -159,6 +175,11 @@ export default function Registration() {
           </div>
         </div>
       </div>
+
+
+
+      
+
     </section>
   );
 }

@@ -1,21 +1,30 @@
 export default function AboutAndDates() {
   const dates = [
     {
+      label: "Call for papers Opens",
+      date: "20 September 2026",
+    },
+    {
       label: "Paper Submission Deadline",
-      date: "To Be Announced",
+      date: "10 February 2027",
     },
     {
-      label: "Review Notification",
-      date: "Within 2–3 Weeks of Submission",
+      label: "Notification of Acceptance",
+      date: " 20 February 2027",
     },
     {
-      label: "Registration Deadline",
-      date: "To Be Announced",
+      label: "Registration Starts",
+      date: "1 March 2027",
+    }
+    ,
+    {
+      label: "Camera-Ready Paper Submission",
+      date: "15 March 2027",
     },
     {
-      label: "Conference Dates",
-      date: "To Be Announced",
-    },
+      label: "Registration Closes",
+      date: "20 March 2027",
+    }
   ];
 
   return (
