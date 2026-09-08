@@ -153,16 +153,7 @@ export default function AboutAndDates() {
               ))}
             </div>
 
-            {/* Footer Note */}
-            <div className="border-t border-slate-200 bg-slate-50 px-6 py-4 sm:px-7">
-              <p className="text-xs leading-5 text-slate-500">
-                Dates marked as{" "}
-                <span className="font-semibold text-slate-700">
-                  “To Be Announced”
-                </span>{" "}
-                will be updated once officially confirmed.
-              </p>
-            </div>
+            
           </div>
         </div>
       </div>

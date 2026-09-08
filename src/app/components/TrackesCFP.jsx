@@ -35,6 +35,7 @@ export default function TracksCFP() {
         "Fiber-Optic Sensor Networks & Coherent Transmission",
         "Photonic Integrated Circuits (PICs)",
         "Quantum Optical Networks",
+        "Visible Light Communication (VLC)",
       ],
     },
     {
@@ -49,6 +50,20 @@ export default function TracksCFP() {
         "Polymers, Catalysis & Environmental Chemistry",
       ],
     },
+    {
+      number: "05",
+      // cyber + ai
+      title: "Cybersecurity & AI-Driven Defense",
+      description:
+        "Exploring AI-driven cybersecurity, threat detection, and resilient digital infrastructures.",
+      topics: [
+        "AI for Threat Detection & Intrusion Prevention",
+        "Adversarial Machine Learning & Security",  
+      "Secure Multi-Party Computation & Privacy-Preserving AI",
+      "Blockchain & Decentralized Security Solutions",
+      ],
+      
+    }
   ];
 
   return (
