@@ -82,7 +82,7 @@ export default function HowToSubmit() {
               </p>
 
               <a
-                href="https://cmt3.research.microsoft.com/docs/help/general/account-creation.html"
+                href="https://cmt3.research.microsoft.com/User/Register"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-cyan-700 hover:text-cyan-900 hover:underline"
@@ -212,17 +212,14 @@ export default function HowToSubmit() {
 
           {/* Replace # with the actual CMT conference URL */}
           <a
-            href="#"
+            href="https://cmt3.research.microsoft.com/QGOCON2027/Submission/Index"
             className="mt-6 inline-flex items-center gap-2 rounded-xl bg-cyan-400 px-6 py-3 text-sm font-bold text-slate-950 transition-all duration-200 hover:bg-cyan-300 hover:shadow-lg hover:shadow-cyan-400/20"
           >
-            CMT Submission Link Coming Soon
+            Click to Submit Paper
             <span aria-hidden="true">→</span>
           </a>
 
-          <p className="mt-4 text-xs text-slate-500">
-            The official submission link will be published once the QGOCON
-            CMT conference site is available.
-          </p>
+          
         </section>
 
       </div>

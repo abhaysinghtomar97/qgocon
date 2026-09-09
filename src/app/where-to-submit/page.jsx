@@ -77,22 +77,17 @@ export default function WhereToSubmit() {
               </p>
 
               <h3 className="mt-2 text-xl font-bold text-slate-950">
-                CMT submission link coming soon
+                CMT submission link Ready
               </h3>
 
-              <p className="mt-3 text-sm leading-7 text-slate-600">
-                The official QGOCON CMT conference page will be linked here
-                once the conference submission site has been created and
-                activated.
-              </p>
 
-              {/* Replace "#" with the actual CMT URL */}
+              
               <a
-                href="#"
-                className="mt-6 inline-flex cursor-not-allowed items-center gap-2 rounded-xl bg-slate-200 px-6 py-3 text-sm font-bold text-slate-500"
+                href="https://cmt3.research.microsoft.com/QGOCON2027/Submission/Index"
+                className="mt-6 inline-flex cursor-pointer items-center gap-2 rounded-xl hover:shadow-green-300  bg-green-600 px-6 py-3 text-sm font-bold text-white"
                 aria-disabled="true"
               >
-                Submission Link Coming Soon
+                Submit Paper Now !
                 <span aria-hidden="true">→</span>
               </a>
             </div>

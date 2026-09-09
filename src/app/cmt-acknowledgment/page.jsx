@@ -52,7 +52,7 @@ export default function CMTAcknowledgment() {
                 </p>
 
                 <p className="mt-2 font-semibold text-slate-900">
-                  2026
+                  2027
                 </p>
               </div>
             </div>

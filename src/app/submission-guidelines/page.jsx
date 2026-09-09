@@ -137,10 +137,10 @@ export default function SubmissionGuidelines() {
 
           {/* Replace href once CMT conference URL is available */}
           <a
-            href="#"
+            href="how-to-submit"
             className="mt-6 inline-flex items-center gap-2 rounded-xl bg-cyan-400 px-6 py-3 text-sm font-bold text-slate-950 transition-all duration-200 hover:bg-cyan-300 hover:shadow-lg hover:shadow-cyan-400/20"
           >
-            CMT Submission Link Coming Soon
+            How to Submit ?? 
           </a>
         </div>
 

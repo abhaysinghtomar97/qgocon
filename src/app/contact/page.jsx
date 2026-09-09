@@ -49,7 +49,7 @@ export default function Contact() {
           {/* Left Card */}
           <section className="rounded-2xl bg-slate-950 p-7 text-white shadow-sm sm:p-8">
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-400">
-              QGOCON 2026
+              QGOCON 2027
             </span>
 
             <h2 className="mt-4 text-2xl font-bold">
@@ -247,9 +247,34 @@ export default function Contact() {
             Where to Submit
             <span aria-hidden="true">→</span>
           </a>
-        </section>
 
+        </section>
+       {/* add style for border as dashed  */}
+        <div className="mt-10 rounded-2xl border text-center border-dashed border-black bg-white p-7 shadow-sm sm:p-8">
+          <h2 className="text-2xl font-bold text-slate-950">
+            Need Technical Assistance?
+          </h2>
+      
+         
+          <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-slate-900/70">
+            If you encounter any technical issues or bugs while using the
+            conference website or submission platform, please report them to
+            our technical support team.
+          </p>
+          <a
+            href="mailto:abhaysinghtomar97@gmail.com" >
+            <span className="mt-6 inline-flex items-center gap-2 rounded-xl bg-slate-950 px-6 py-3 text-sm font-bold text-white transition hover:bg-slate-800">
+              Report a Bug or Technical Issue 
+              <span aria-hidden="true">→</span>
+            </span>
+            <p className="mt-4 text-sm text-slate-600">
+              Developer - Abhay Singh Tomar
+            </p>
+          </a>
+        </div>
       </div>
     </main>
   );
 }
+
+ 

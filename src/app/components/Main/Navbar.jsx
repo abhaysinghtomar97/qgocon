@@ -128,7 +128,7 @@ export default function Navbar() {
 
             {/* SUBMIT BUTTON */}
             <Link
-              href="/where-to-submit"
+              href="https://cmt3.research.microsoft.com/QGOCON2027/Submission/Index"
               className="ml-2 rounded-xl bg-cyan-400 px-4 py-2.5 text-sm font-bold text-slate-950 transition hover:bg-cyan-300 hover:shadow-lg hover:shadow-cyan-400/20"
             >
               Submit Paper →
