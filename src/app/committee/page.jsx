@@ -41,7 +41,7 @@ const committeeSections = [
       },
       {
         role: "Technical Committee Member",
-        name: "Pushpanjali",
+        name: "Pushpanjali Pandey",
         about: "Director", // Added from comments
         affiliation: "Gyancity Research Consultancy",
       },
