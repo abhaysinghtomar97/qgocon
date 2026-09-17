@@ -20,6 +20,13 @@ export default function Hero() {
             Quantum Computing, Generative AI, Optical Communication & Chemical Technology
           </span>
         </h1>
+
+        {/* adding date and location
+         */}
+        <p className="text-lg sm:text-xl text-slate-300 mb-4">
+          Date: <span className="text-white font-bold">April 28-29, 2027</span> | Location: <span className="text-white font-bold"> Hotel Himalya, Kathmandu, Nepal</span>
+        </p>
+
         <p className="text-lg sm:text-xl text-cyan-200 font-semibold mb-2">
           Conference Acronym: <span className="text-white font-bold">QGOCON</span>
         </p>

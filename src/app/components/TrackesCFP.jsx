@@ -1,70 +1,164 @@
 import Link from "next/link";
 export default function TracksCFP() {
-  const tracks = [
-    {
-      number: "01",
-      title: "Quantum Computing & Information",
-      description:
-        "Advancing quantum computation, information processing, and secure quantum technologies.",
-      topics: [
-        "Quantum Algorithms & Complexity",
-        "Quantum Cryptography & QKD",
-        "Quantum Machine Learning (QML)",
-        "Fault-Tolerant Quantum Systems & Error Correction",
-      ],
-    },
-    {
-      number: "02",
-      title: "Generative AI & Foundation Models",
-      description:
-        "Exploring next-generation generative models, intelligent systems, and trustworthy AI.",
-      topics: [
-        "Large Language Models (LLMs) & Multimodal AI",
-        "Diffusion Models & Generative Vision",
-        "AI Safety, Alignment & Digital Trust",
-        "Generative Modeling in Science & Engineering",
-      ],
-    },
-    {
-      number: "03",
-      title: "Optical Communication & Photonics",
-      description:
-        "Innovations in photonics, optical networks, high-speed communication, and sensing.",
-      topics: [
-        "Free-Space Optics (FSO) & LiFi",
-        "Fiber-Optic Sensor Networks & Coherent Transmission",
-        "Photonic Integrated Circuits (PICs)",
-        "Quantum Optical Networks",
-        "Visible Light Communication (VLC)",
-      ],
-    },
-    {
-      number: "04",
-      title: "Chemical Technology & Material Science",
-      description:
-        "Bridging computational methods, advanced materials, chemistry, and sustainable technologies.",
-      topics: [
-        "Computational Chemistry & Molecular Simulation",
-        "Green Chemical Processes & Nanotechnology",
-        "AI/ML for Drug Discovery & Material Design",
-        "Polymers, Catalysis & Environmental Chemistry",
-      ],
-    },
-    {
-      number: "05",
-      // cyber + ai
-      title: "Cybersecurity & AI-Driven Defense",
-      description:
-        "Exploring AI-driven cybersecurity, threat detection, and resilient digital infrastructures.",
-      topics: [
-        "AI for Threat Detection & Intrusion Prevention",
-        "Adversarial Machine Learning & Security",  
+ const tracks = [
+  {
+    number: "01",
+    title: "Quantum Computing & Information",
+    description:
+      "Advancing quantum computation, information processing, and secure quantum technologies.",
+    topics: [
+      "Quantum Algorithms & Complexity",
+      "Quantum Cryptography & QKD",
+      "Quantum Machine Learning (QML)",
+      "Fault-Tolerant Quantum Systems & Error Correction",
+    ],
+  },
+  {
+    number: "02",
+    title: "Generative AI & Foundation Models",
+    description:
+      "Exploring next-generation generative models, intelligent systems, and trustworthy AI.",
+    topics: [
+      "Large Language Models (LLMs) & Multimodal AI",
+      "Diffusion Models & Generative Vision",
+      "AI Safety, Alignment & Digital Trust",
+      "Generative Modeling in Science & Engineering",
+    ],
+  },
+  {
+    number: "03",
+    title: "Optical Communication & Photonics",
+    description:
+      "Innovations in photonics, optical networks, high-speed communication, and sensing.",
+    topics: [
+      "Free-Space Optics (FSO) & LiFi",
+      "Fiber-Optic Sensor Networks & Coherent Transmission",
+      "Photonic Integrated Circuits (PICs)",
+      "Quantum Optical Networks",
+      "Visible Light Communication (VLC)",
+    ],
+  },
+  {
+    number: "04",
+    title: "Chemical Technology & Material Science",
+    description:
+      "Bridging computational methods, advanced materials, chemistry, and sustainable technologies.",
+    topics: [
+      "Computational Chemistry & Molecular Simulation",
+      "Green Chemical Processes & Nanotechnology",
+      "AI/ML for Drug Discovery & Material Design",
+      "Polymers, Catalysis & Environmental Chemistry",
+    ],
+  },
+  {
+    number: "05",
+    title: "Cybersecurity & AI-Driven Defense",
+    description:
+      "Exploring AI-driven cybersecurity, threat detection, and resilient digital infrastructures.",
+    topics: [
+      "AI for Threat Detection & Intrusion Prevention",
+      "Adversarial Machine Learning & Security",
       "Secure Multi-Party Computation & Privacy-Preserving AI",
       "Blockchain & Decentralized Security Solutions",
-      ],
-      
-    }
-  ];
+    ],
+  },
+  {
+    number: "06",
+    title: "Robotics & Autonomous Systems",
+    description:
+      "Advancing intelligent automation, multi-agent systems, and human-robot interaction.",
+    topics: [
+      "Autonomous Vehicles & UAVs",
+      "Reinforcement Learning for Robotics",
+      "Robot Vision & Perception",
+      "Swarm Robotics & Multi-Agent Systems",
+    ],
+  },
+  {
+    number: "07",
+    title: "Internet of Things (IoT) & Edge Computing",
+    description:
+      "Enhancing connectivity, real-time processing, and intelligence at the network edge.",
+    topics: [
+      "Industrial IoT (IIoT) & Cyber-Physical Systems",
+      "Edge AI & Federated Learning",
+      "Low-Power Wide-Area Networks (LPWAN)",
+      "IoT Security & Trust Management",
+    ],
+  },
+  {
+    number: "08",
+    title: "6G Networks & Wireless Communications",
+    description:
+      "Shaping the future of mobile connectivity, terahertz communication, and smart networks.",
+    topics: [
+      "Terahertz (THz) Communications",
+      "Reconfigurable Intelligent Surfaces (RIS)",
+      "Massive MIMO & Beamforming",
+      "Semantic Communications",
+    ],
+  },
+  {
+    number: "09",
+    title: "Bioinformatics & Computational Biology",
+    description:
+      "Leveraging computational tools and data science to solve complex biological problems.",
+    topics: [
+      "Genomics & Sequence Analysis",
+      "Structural Biology & Protein Folding AI",
+      "Medical Imaging & Diagnostic AI",
+      "Systems Biology & Network Medicine",
+    ],
+  },
+  {
+    number: "10",
+    title: "Sustainable Energy & Smart Grids",
+    description:
+      "Integrating renewable resources, intelligent distribution, and green tech innovations.",
+    topics: [
+      "Renewable Energy Integration & Storage",
+      "Smart Grid Optimization & Machine Learning",
+      "Microgrids & Decentralized Energy",
+      "Energy Harvesting Technologies",
+    ],
+  },
+  {
+    number: "11",
+    title: "Data Science & Big Data Analytics",
+    description:
+      "Extracting actionable insights from massive datasets through advanced analytical frameworks.",
+    topics: [
+      "Real-Time Stream Processing & Analytics",
+      "Graph Neural Networks (GNNs) & Graph Mining",
+      "Scalable Data Architectures",
+      "Time-Series Analysis & Predictive Modeling",
+    ],
+  },
+  {
+    number: "12",
+    title: "Extended Reality (XR) & Spatial Computing",
+    description:
+      "Creating immersive environments and bridging physical and digital worlds.",
+    topics: [
+      "Virtual, Augmented, & Mixed Reality (VR/AR/MR)",
+      "3D Reconstruction & Digital Twins",
+      "Haptics & Human-Computer Interaction (HCI)",
+      "Metaverse Technologies & Architectures",
+    ],
+  },
+  {
+    number: "13",
+    title: "Space Technologies & Aerospace Systems",
+    description:
+      "Innovations in satellite communication, deep space networks, and aerospace engineering.",
+    topics: [
+      "Satellite IoT (SatIoT) & Non-Terrestrial Networks",
+      "Earth Observation & Remote Sensing AI",
+      "Orbital Debris Tracking & Collision Avoidance",
+      "Deep Space Communications",
+    ],
+  }
+];
 
   return (
     <section

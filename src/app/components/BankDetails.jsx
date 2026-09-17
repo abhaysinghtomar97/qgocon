@@ -1,8 +1,8 @@
 export default function BankDetailsTable() {
   return (
-    <div className="flex justify-center p-8 bg-[#f5f5f5]">
-      {/* Table Container */}
-      <table className="w-full max-w-4xl border-collapse bg-[#fafafa] text-left text-sm md:text-base font-sans">
+   
+    
+      <table className="w-full  max-w-4xl border-collapse bg-[#fafafa] text-left text-sm md:text-base font-sans">
         <tbody className="text-gray-600">
           
           {/* Row 1 */}
@@ -57,6 +57,6 @@ export default function BankDetailsTable() {
 
         </tbody>
       </table>
-    </div>
+   
   );
 }

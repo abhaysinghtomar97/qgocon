@@ -1,5 +1,3 @@
-import React from "react";
-
 const committeeSections = [
   {
     title: "Conference Leadership",
@@ -7,14 +5,16 @@ const committeeSections = [
       {
         role: "General Chair",
         name: "Dr. Bishwajeet Pandey",
-        about: "Director of Applied AI", // Added from comments
+        about: "Director of Applied AI",
         affiliation: "Dr. A. P. J. Abdul Kalam Technical University, India",
+        imageUrl: "/biswajeet.png", // Added sample high-res image
       },
       {
         role: "Co-Chair",
         name: "Arthur James Swart",
-        about: "Leadership & Operations", // Added descriptive text
+        about: "Leadership & Operations",
         affiliation: "Central University of Technology",
+        imageUrl: "/arthur.jpg", // Local image for faster loading
       },
     ],
   },
@@ -26,42 +26,49 @@ const committeeSections = [
         name: "Keshav Kumar",
         about: "Technical Reviewer",
         affiliation: "Dr. A. P. J. Abdul Kalam Technical University, India",
+        imageUrl: "/keshav_kumar.jpg", 
       },
       {
         role: "Technical Committee Member",
         name: "Linga Reddy Alva",
         about: "Research Analyst",
         affiliation: "Independent Researcher",
+        imageUrl: "/linga-reddy-alva.jpg",
       },
       {
         role: "Technical Committee Member",
         name: "Bireswar Banerjee",
         about: "Industry Specialist",
         affiliation: "VISA Inc",
+        imageUrl: "",
       },
       {
         role: "Technical Committee Member",
         name: "Pushpanjali Pandey",
-        about: "Director", // Added from comments
+        about: "Director",
         affiliation: "Gyancity Research Consultancy",
+        imageUrl: "/pushpanjali.jpg", 
       },
       {
         role: "Technical Committee Member",
         name: "Rajnikant",
         about: "Academic Coordinator",
         affiliation: "",
+        imageUrl: "",
       },
       {
         role: "Technical Committee Member",
         name: "Krishnaveni",
         about: "Program Assessor",
         affiliation: "",
+        imageUrl: "",
       },
       {
         role: "Technical Committee Member",
         name: "Prashant Vajpayee",
         about: "Evaluation Committee",
         affiliation: "",
+        imageUrl: "",
       },
     ],
   },
@@ -69,7 +76,7 @@ const committeeSections = [
 
 export default function Committee() {
   return (
-    <main className="min-h-screen bg-slate-50 py-20 text-slate-900 font-sans">
+    <main className="min-h-screen bg-slate-50 py-20 font-sans text-slate-900">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         
         {/* Header & Hero Image Section */}
@@ -82,76 +89,86 @@ export default function Committee() {
             Conference Committee
           </h1>
 
-          <p className="mt-4 text-sm leading-7 text-slate-500 sm:text-base max-w-2xl mx-auto">
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
             Meet the academic and professional committee members supporting the
             organization, technical program, and peer-review process of QGOCON.
           </p>
 
-          {/* Added Hero Image */}
-          <div className="mt-10 overflow-hidden rounded-3xl shadow-xl border border-slate-200 bg-white">
+          <div className="mt-10 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
             <img
               src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070&auto=format&fit=crop"
               alt="Committee collaborating at conference"
-              className="w-full h-72 object-cover object-center"
+              className="h-72 w-full object-cover object-center"
             />
           </div>
-          <p className="mt-6 text-sm font-medium text-slate-600 italic">
+          <p className="mt-6 text-sm font-medium italic text-slate-600">
             "Bringing together global leaders in technology and academia to shape the future of applied AI research."
           </p>
         </div>
 
         {/* Committee Sections */}
-        <div className="space-y-16">
+        <div className="space-y-24">
           {committeeSections.map((section) => (
             <section key={section.title}>
-              <div className="mb-8 flex items-center gap-4">
+              <div className="mb-12 flex items-center gap-4">
                 <div className="h-px flex-1 bg-slate-200" />
-                <h2 className="text-center text-xl font-bold text-slate-950 sm:text-2xl">
+                <h2 className="text-center text-2xl font-bold text-slate-950 sm:text-3xl">
                   {section.title}
                 </h2>
                 <div className="h-px flex-1 bg-slate-200" />
               </div>
 
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {section.members.map((member, index) => (
                   <article
                     key={`${member.name}-${index}`}
-                    className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan-200 hover:shadow-md"
+                    className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-cyan-300 hover:shadow-xl"
                   >
-                    {/* Avatar */}
-                    <div className="flex items-start justify-between">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-950 text-sm font-bold text-cyan-400 transition-colors duration-300 group-hover:bg-cyan-500 group-hover:text-white">
-                        {member.name
-                          .replace("Dr. ", "")
-                          .split(" ")
-                          .slice(0, 2)
-                          .map((word) => word[0])
-                          .join("")
-                          .toUpperCase()}
+                    {/* Large Full-Width Profile Photo */}
+                    <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
+                      {member.imageUrl ? (
+                        <img
+                          src={member.imageUrl}
+                          alt={member.name}
+                          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                      ) : (
+                        <div className="flex h-full w-full items-center justify-center bg-slate-950 text-5xl font-bold text-cyan-400 transition-colors duration-500 group-hover:bg-cyan-900 group-hover:text-white">
+                          {member.name
+                            .replace("Dr. ", "")
+                            .split(" ")
+                            .slice(0, 2)
+                            .map((word) => word[0])
+                            .join("")
+                            .toUpperCase()}
+                        </div>
+                      )}
+                      
+                      {/* Floating Badge */}
+                      <div className="absolute right-4 top-4">
+                        <span className="rounded-full bg-slate-900/80 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-cyan-300 backdrop-blur-md">
+                          Committee
+                        </span>
                       </div>
-                      <span className="rounded-full bg-cyan-50 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-cyan-700">
-                        Committee
-                      </span>
                     </div>
 
-                    {/* Information */}
-                    <div className="mt-5">
-                      <p className="text-xs font-semibold uppercase tracking-[0.12em] text-cyan-600">
+                    {/* Information (Bottom Half) */}
+                    <div className="flex flex-1 flex-col p-6 sm:p-8">
+                      <p className="text-xs font-semibold uppercase tracking-[0.15em] text-cyan-600">
                         {member.role}
                       </p>
 
-                      <h3 className="mt-2 text-lg font-bold text-slate-900">
+                      <h3 className="mt-2 text-xl font-bold text-slate-900">
                         {member.name}
                       </h3>
 
-                      {/* Displaying the new "about" field */}
                       {member.about && (
-                        <p className="mt-1 text-sm font-medium text-slate-700">
+                        <p className="mt-2 text-sm font-medium text-slate-700">
                           {member.about}
                         </p>
                       )}
 
-                      <p className="mt-2 text-sm leading-6 text-slate-500">
+                      <p className="mt-3 text-sm leading-relaxed text-slate-500">
                         {member.affiliation}
                       </p>
                     </div>
@@ -161,8 +178,9 @@ export default function Committee() {
             </section>
           ))}
         </div>
+     
 
-        {/* TPC Mandate Section (Recreated from image_1207eb.png) */}
+        {/* TPC Mandate Section */}
         <section className="mt-32 max-w-4xl bg-white p-10 md:p-14 rounded-3xl border border-slate-100 shadow-sm">
           <div className="mb-14">
             <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">

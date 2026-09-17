@@ -1,3 +1,5 @@
+import PartnersAndVenue from "./PartnerAndVenue";
+
 export default function AboutAndDates() {
   const dates = [
     {
@@ -47,7 +49,7 @@ export default function AboutAndDates() {
               About the Conference
             </span>
 
-            {/* Heading */}
+           {/* Heading */}
             <h2 className="mt-5 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
               About QGOCON
             </h2>
@@ -64,21 +66,38 @@ export default function AboutAndDates() {
                   Computing, Generative AI, Optical Communication, and Chemical
                   Technology (QGOCON)
                 </strong>{" "}
-                provides a premier interdisciplinary forum for researchers,
-                practitioners, and educators.
+                is a premier interdisciplinary platform designed to bring together 
+                leading academic scientists, researchers, and industry pioneers. 
+                It serves as a dynamic forum to exchange experiences, share research 
+                outcomes, and shape forward-looking visions across multiple cutting-edge domains.
               </p>
 
               <p>
-                The conference aims to foster discussions on how{" "}
+                The conference aims to foster deep, cross-sector discussions on how{" "}
                 <span className="font-medium text-slate-800">
                   quantum algorithms, foundation generative models, high-speed
                   optical photonics, and novel chemical technologies
                 </span>{" "}
-                converge to address emerging scientific and industrial
-                challenges.
+                are converging to address the most complex scientific and industrial 
+                challenges of our time. By breaking down traditional academic silos, 
+                QGOCON accelerates innovation at the intersection of these rapidly evolving fields.
+              </p>
+
+              <p>
+                Beyond technical paper presentations and insightful keynote sessions, 
+                the conference is dedicated to bridging the gap between theoretical 
+                research and real-world application. Attendees will have the opportunity 
+                to explore breakthrough technological demonstrations, participate in 
+                collaborative workshops, and discover sustainable solutions for the future.
+              </p>
+
+              <p>
+                Whether you are an established researcher seeking to publish groundbreaking work, 
+                an industry professional tracking the latest technological shifts, or a 
+                scholar eager to learn from global experts, QGOCON offers an unparalleled 
+                environment for learning, networking, and professional growth.
               </p>
             </div>
-
             {/* Conference Focus */}
             <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {[
@@ -102,6 +121,7 @@ export default function AboutAndDates() {
               ))}
             </div>
           </div>
+           
 
           {/* Important Dates */}
           <div
@@ -156,6 +176,7 @@ export default function AboutAndDates() {
             
           </div>
         </div>
+        <div> <PartnersAndVenue /></div>
       </div>
     </section>
   );

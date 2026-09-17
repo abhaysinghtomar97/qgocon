@@ -103,29 +103,10 @@ export default function Registration() {
               </table>
             </div>
 
-            {/* Fee Note */}
-            <div className="mt-5 flex items-start gap-3 rounded-xl bg-cyan-50 p-4">
-              <span className="mt-0.5 text-cyan-600">ℹ</span>
-
-              <p className="text-xs leading-5 text-cyan-900">
-                The final registration amount and payment instructions will be
-                communicated to authors after paper acceptance.
-              </p>
-            </div>
+           
           </div>
 
-          {/* payment integration */}
-
-      <div className="bg-gray-200 max-h-max font-bold rounded-xl p-10"> 
-        <p className="  ml-10">For Payments Via Wire Transfer/Bank Transfer Using Bank Identifier CODE (BIC)/SWIFT CODE/Routing/NEFT/IFSC CODE:</p>
-        <BankDetailsTable />
-        <hr />
-        <PaymentForm />
-      </div>
-
-
-
-
+    
 
           {/* Registration Guidelines */}
           <div className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-8">
@@ -173,6 +154,17 @@ export default function Registration() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div>
+            {/* payment integration */}
+
+      <div className="bg-gray-200 max-h-max font-bold rounded-xl p-10"> 
+        <p className="  m-10">For Payments Via Wire Transfer/Bank Transfer Using Bank Identifier CODE (BIC)/SWIFT CODE/Routing/NEFT/IFSC CODE:</p>
+        <BankDetailsTable />
+        <hr />
+        <PaymentForm />
+      </div>
         </div>
       </div>
 
