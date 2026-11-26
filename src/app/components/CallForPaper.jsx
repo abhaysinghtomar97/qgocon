@@ -25,6 +25,14 @@ export default function CallForPapers() {
       name: "Adolescencia e Saude",
       url: "https://www.scopus.com/sourceid/19900192604#tabs=2",
     },
+    {
+      name: "Letters in Biomathematics",
+      url : "https://www.scopus.com/sourceid/21100886421"
+    },
+    {
+      name: "Computer and Decision Making",
+      url : "https://www.scopus.com/sourceid/21101390392#tabs=2"
+    }
   ];
 
   return (
